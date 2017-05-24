@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:id="@+id/friend_profile"
+        android:src="@drawable/a"
+        android:layout_above="@+id/friend_nameTextView"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:id="@+id/friend_nameLabelTextView"
+        style="@style/ContactLabelTextView"
+        android:layout_width="wrap_content"
+        android:text="@string/label_name"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/friend_nameTextView"
+        android:layout_alignBaseline="@+id/friend_nameTextView"
+
+        />
+
+    <TextView
+        android:id="@+id/friend_nameTextView"
+        style="@style/ContactTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/friend_phoneLabelTextView"
+        android:text="@string/label_phone"
+        style="@style/ContactLabelTextView"
+        android:layout_below="@+id/friend_nameTextView"
+        android:layout_toLeftOf="@+id/friend_phoneTextView"
+        android:layout_alignBaseline="@+id/friend_phoneTextView"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:id="@+id/friend_phoneTextView"
+        style="@style/ContactTextView"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/friend_nameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_call"
+        android:text="@string/menuitem_call"
+        android:layout_below="@+id/friend_phoneTextView"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:background="#FF9F0D" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_chat"
+        android:text="@string/menuitem_chat"
+        android:layout_below="@+id/friend_phoneTextView"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="#FF9F0D" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_sns"
+        android:text="@string/menuitem_sns"
+        android:layout_below="@+id/friend_phoneTextView"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentRight="true"
+        android:background="#FF9F0D" />
+
+
+</RelativeLayout>

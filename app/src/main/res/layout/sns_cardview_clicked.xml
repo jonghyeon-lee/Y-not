@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/profileimg"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_border"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_name"
+                android:layout_gravity="center"
+                android:text="@string/c_user"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="250dp"
+       android:id="@+id/clicked_image"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clicked_text"
+        android:text="@string/c_contents"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text=""
+        android:id="@+id/clicked_btngood"
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clicked_cntgood"
+            android:layout_marginLeft="5dp"
+            android:text="@string/c_cntgood"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clicked_cntcomment"
+            android:text="@string/c_cntcomment"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:id="@+id/editcomment"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:id="@+id/add_comment"
+            android:layout_marginRight="5dp"/>
+
+
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/comment_listview">
+
+    </ListView>
+
+</LinearLayout>

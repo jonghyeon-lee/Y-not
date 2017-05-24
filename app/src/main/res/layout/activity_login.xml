@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basicOrange">
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/login1_hint"
+        android:id="@+id/name"
+        android:textColor="#ffffff"
+        android:textColorHint="#fdeed8"
+        android:layout_above="@+id/mobno"
+        android:layout_centerHorizontal="true"
+         />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/login2_hint"
+        android:id="@+id/mobno"
+        android:textColor="#ffffff"
+        android:textColorHint="#fdeed8"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:phoneNumber="false"
+        android:inputType="number" />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login_button"
+        android:textColor="#fdeed8"
+        android:id="@+id/log_btn"
+        android:background="@color/buttonOrange"
+        android:layout_below="@+id/mobno"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+</RelativeLayout>

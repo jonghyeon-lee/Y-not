@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hnd.y_not_proto2" >
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.example.gcm.permission.C2D_MESSAGE" />
+    <permission
+        android:name="com.example.gcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <receiver
+            android:name=".MSGReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.example.gcm" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".MSGService" />
+        <activity
+            android:name=".IntroActivity"
+
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/IntroTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+        <activity android:name=".LoginActivity"
+            android:label="LoginActivity"
+            />
+        <activity android:name=".sns.CardViewActivity"
+            android:label="CardViewActivity"
+            />
+        <activity android:name=".sns.InputCardActivity"
+            android:label="InputCardActivity"
+            />
+
+        <activity android:name=".chat.ChatActivity"
+            android:label="ChatActivity"
+            />
+
+        <activity
+            android:name=".member.FriendInfo"
+            android:label="@string/title_activity_friendinfo"
+            />
+        <activity android:name=".EditMyInfoFragment"
+            android:label="@string/title_activity_editmyinfo"
+            />
+        <activity
+            android:name=".member.MyInfoFragment"
+            android:label="@string/title_activity_myinfo"
+            >
+        </activity>
+    </application>
+
+</manifest>

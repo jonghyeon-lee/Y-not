@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/btn_take_camera"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="@string/camera"
+        android:layout_marginLeft="40dp"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/btn_select_gallery"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="@string/gallery"
+        android:typeface="sans" /></LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter" />
+
+    <EditText
+        android:layout_height="150dp"
+        android:layout_width="fill_parent"
+        android:id="@+id/uploadcontent"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:gravity="top"
+        android:background="#FFBB00"
+        android:textColor="#ffffff"
+        android:layout_marginRight="20dp">
+
+    </EditText>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/upload"
+        android:text="@string/upload"
+        android:layout_marginLeft="135dp"/>
+</LinearLayout>

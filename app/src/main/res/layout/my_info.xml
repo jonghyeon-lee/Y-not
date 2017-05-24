@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:id="@+id/my_profile"
+            android:src="@drawable/a"
+           android:layout_above="@+id/nameTextView"
+            android:layout_centerHorizontal="true"
+
+            />
+
+    <TextView
+            android:id="@+id/nameLabelTextView"
+            style="@style/ContactLabelTextView"
+            android:layout_width="wrap_content"
+            android:text="@string/label_name"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/nameTextView"
+            android:layout_alignBaseline="@+id/nameTextView"
+
+        />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            style="@style/ContactTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/phoneLabelTextView"
+            android:text="@string/label_phone"
+            style="@style/ContactLabelTextView"
+            android:layout_below="@+id/nameTextView"
+            android:layout_toLeftOf="@+id/phoneTextView"
+            android:layout_alignBaseline="@+id/phoneTextView"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/phoneTextView"
+            style="@style/ContactTextView"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/nameTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+          />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_self_chat"
+            android:text="@string/self_chat"
+            android:layout_below="@+id/phoneTextView"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="#FF9F0D" />
+
+
+</RelativeLayout>
